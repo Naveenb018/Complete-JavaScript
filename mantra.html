@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title> Myntra</title>
+</head>
+<body>
+    <script>
+       let product ={
+        company: 'myntra' ,
+        size: 'M' ,
+        item_name: 'Jeans' ,
+        price: 1999 ,
+        'delivary-time': 'on same day' ,
+       };
+      let copyproduct = product;
+       copyproduct.size= 'L';
+       console.log(product)
+       copyproduct.price = 1599 ;
+       console.log(product);
+       console.log(product['delivary-time']);
+    </script>
+</body>
+</html>

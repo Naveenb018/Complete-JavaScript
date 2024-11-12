@@ -1,0 +1,78 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra bag</title>
+  <style>
+    .sandy1{
+        color: rgb(21, 29, 27);
+        background-color: rgb(242, 244, 246);
+        padding-top: 8px;
+        padding-block: 8px;
+        padding-inline-start: 7%;
+        padding-right: 7%;
+        border-color: black;
+        border-width: 0.3cap;
+        border-radius: 15px;
+        
+    }
+    #naveen{
+        color: rgb(14, 22, 2);
+        background-color: rgb(145, 233, 133);
+        padding-inline: 30px;
+        border: none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-inline-start:flex;
+        border-radius: 10px;
+
+    }
+    .sandy{
+      background-color: rgb(145, 233, 133);
+      border: none;
+      padding: 15px 30px 15px 30px;
+      font-style: inherit;
+      border-radius: 15px;
+
+    }
+  </style>
+    
+</head>
+<body><main>
+  <select name="options" id="dropdown">
+         <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select>
+  
+   <button id="naveen" onclick="alert('your item is added')">Add to Bag</button>
+   <button class="Sandy1">MOVE TO WISHLIST</button>
+   <button class="Sandy" onclick="alert('your bag has 2 items')">Add 1+1 sale item</button>
+   <script>
+    const person = {
+      name : "Naveen",
+      age : 23,
+      hobbies : ["reading", "watching"],
+      mStatus : "Unmarried"
+    }
+    // console.log(person);
+    // console.log(typeof person);
+    // let jsonPerson = JSON.stringify(person);
+    // console.log(jsonPerson);
+    // console.log(typeof jsonPerson);
+    // const objperson = JSON.parse(jsonPerson);
+    // console.log(typeof objperson);
+    // console.log(objperson);
+
+localStorage.setItem('person', JSON.stringify(person));
+console.log(localStorage.getItem('person'));
+let person2 = JSON.parse(localStorage.getItem('person'));
+console.log((person2));
+
+   
+   </script>
+</main>
+</body>
+</html>

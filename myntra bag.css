@@ -1,0 +1,30 @@
+
+.Sandy1{
+    color: rgb(21, 29, 27);
+    background-color: rgb(242, 244, 246);
+    padding-top: 8px;
+    padding-block: 8px;
+    padding-inline-start: 7%;
+    padding-right: 7%;
+    border-color: black;
+    border-width: 0.3cap;
+    border-radius: 15px;
+    
+}
+.naveen{
+    color: rgb(14, 22, 2);
+    background-color: rgb(145, 233, 133);
+    padding-inline: 30px;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-inline-start:flex;
+    border-radius: 10px;
+
+}
+.Sandy{
+  background-color: rgb(145, 233, 133);
+  border: none;
+  padding: 10px 35px;
+  border-radius: 15px;}
+  

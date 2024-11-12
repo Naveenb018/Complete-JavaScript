@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>JSON Practices</title>
+    <style>
+      #my-button{
+        size: 50px;
+        width: 50px;
+        font-size: larger;
+        background-color:#60dea1 ;
+      }
+    </style>
+</head>
+<body>
+    <h3 id ="greeting"></h3>
+    <button id="my-button" onclick=" buttonPressed ()" > click</button>
+   
+   
+   
+   
+   
+   
+   
+   <script>
+    let noOfTimesClick = 0;
+    function buttonPressed(){
+        let button =document.querySelector('#my-button')
+        noOfTimesClick++;
+        button.innerText = noOfTimesClick;
+        
+
+    }
+  function dogreeting(person= ' ') {
+     let date = new Date();
+     let hours = date.getHours();
+    // let hours = 18;
+     let heading = document.querySelector('#greeting');
+   
+     if(hours >5 && hours < 12){
+        heading.innerText = `Good Morning ${person}`
+        
+     } else if(hours >12 && hours <18){
+        heading.innerText = `Good Afternoon ${person}`;
+     } else {
+        heading.innerText = `Good night ${person}`;
+
+
+     }
+    } dogreeting( 'Naveen Kumar');
+     
+    </script>
+</body>
+</html>
