@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // anonymons function(remove Function Name)
+        const sum = function(num1, num2){
+            return num1*num2;
+        }
+        let newSum = sum;
+        console.log(newSum(5, 8));
+
+
+        //Arrow Fuctions(Rmove Function Name and  Function Key Word)
+        let myFunc = (P1,P2)=>{
+            return P1-P2;
+        }
+        console.log(myFunc(5,8))
+
+        //If only one Parameter then remove () to
+        const single = num =>{
+            return num*num;
+        }
+console.log(single(8));
+
+
+        //if only one task then remove {} and also return
+        let squar= sin=> sin*sin;
+        console.log(squar(9));
+    </script>
+</body>
+</html>
