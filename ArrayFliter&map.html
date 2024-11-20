@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters</title>
+</head>
+<body>
+    <script>
+        let arr = [1,8,6,5,9,7,3,4,2];
+        let odds= arr.filter((num, index) =>
+        {
+            if(num % 2===0) {
+                return true;
+            } else{
+
+                return false;
+            }
+            console.log(even);
+        })
+        let newOdd =arr.filter((num, index) => {
+        if(num % 2 ===1){
+            return true;
+        } else{
+            return false
+        }
+        })
+        console.log(odds)
+    </script>
+
+</body>
+</html>
